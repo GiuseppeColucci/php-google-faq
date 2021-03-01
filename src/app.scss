@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    border-bottom: 1px solid lavender;
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: baseline;
+        li{
+            p{
+                margin: 30px 8px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.container{
+    
+    &-center{
+        width: 1200px;
+        margin: auto;
+        .container-text{
+           h1,p{
+               margin-bottom: 15px;
+               
+           }
+        }
+    }
+}

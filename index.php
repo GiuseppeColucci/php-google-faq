@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/app.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="nav">
+        <ul>
+            <li>
+                <p>
+                    introduzione
+                </p>
+
+            </li>
+            <li>
+                <p>
+                Norme sula privacy
+                </p>
+
+            </li>
+            <li>
+                <p>
+                Termini di servizio
+                </p>
+
+            </li>
+            <li>
+                <p>
+                tecnologie
+                </p>
+
+            </li>
+            <li>
+                <p>
+                Domane Frequesnti
+                </p>
+
+            </li>
+
+        </ul>
+    </div>
    <?php
     $quest=[
         [
@@ -67,25 +103,27 @@
 
     ?>
     <div class="container">
-        <div class="containere-center">
-        <?php
-        foreach($quest as $Vtext){
-            ?>
+        <div class="container-center">
+            <div class="container-text">
+                <?php
+                foreach($quest as $keys=> $Vtext){
+                    ?>
 
-            <h1>
-            <!-- domanda -->
-            <?php echo $Vtext["question"]?>
-            
-            </h1>
-            <p>
-            <!-- risposta -->
-            <?php echo $Vtext["answer"]?>
+                    <h1>
+                    <!-- domanda -->
+                    <?php echo $Vtext["question"]?>
+                    
+                    </h1>
+                    <p>
+                    <!-- risposta -->
+                    <?php echo $Vtext["answer"]?>
 
-            </p>
+                    </p>
 
-        <?php
-        }
-        ?>
+                <?php
+                }
+                ?>
+            </div>
         
         </div>
     
